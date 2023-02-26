@@ -1,0 +1,33 @@
+ 
+body {
+  font-family: sans-serif;
+}
+table {
+  border-spacing: 0;
+  width: 100%;
+}
+table tr:nth-child(2n) {
+  background: #ccc;
+}
+tr > td {
+  padding: 10px;
+}
+tr > td:first-child {
+  text-align: center;
+}
+tr > td:last-child {
+  text-align: center;
+  width: 250px;
+  font-size: 2em;
+  font-weight: bold;
+}
+pre {
+  font-size: 1.2em;
+}
+input {
+  padding: 10px;
+  min-width: 150px;
+}
+button {
+  padding: 10px;
+}

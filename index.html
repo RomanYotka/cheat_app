@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>cheat app</title>
+  <link rel="stylesheet" href="css/style.css">
+  </head>
+<body>
+   <table>
+      <tr>
+        <td width="450px">
+          <img src="https://ru.onlinemschool.com/pictures/area/square.png" alt="">        
+        </td>
+        <td>
+            <h1>Формулы площади квадрата</h1>
+            <div>Площадь квадрата равна квадрату длины его стороны</div>
+            <pre>S = a * a</pre>         
+            <form>
+              <input type="number" id="dlinaStoroniKvadrata" name="dlinaStoroniKvadrata" placeholder="Длина стороны">
+              <button type="button" onclick="showResultInDomKvadrat()">Результат</button>
+            </form>
+        </td>
+        <td id="ploschadKvadrata"></td>
+      </tr>
+      <tr>
+        <td>
+          <img src="https://ru.onlinemschool.com/pictures/area/rectangle.png" alt="">
+        </td>
+        <td>
+          <h1>Формула площади прямоугольника</h1>
+          <div>Площадь прямоугольника равна произведению длин двух его смежных сторон</div>
+          <pre>S = a * b</pre>   
+          <form>
+              <input type="number" id="pervayaStoronaPriamougolnika" name="pervayaStoronaPriamougolnika" placeholder="Одна сторона">
+              <input type="number" id="drugayaStoronaPriamougolnika" name="drugayaStoronaPriamougolnika" placeholder="Другая сторона">
+              <button type="button" onclick="showResultInDomPriamougolnika()">Результат</button>
+          </form>
+        </td>
+        <td id="ploschadPriamougolnika"></td>
+      </tr>
+      <tr>
+        <td>
+          <img src="https://ru.onlinemschool.com/pictures/area/parallelogram.png" alt="">
+        </td>
+        <td>
+          <h1>Формулы площади параллелограмма</h1>        
+          <div>Площадь параллелограмма равна произведению длины его стороны и длины опущенной на эту сторону высоты.</div>
+          <pre>S = a * h</pre>   
+          <form>
+              <input type="number" id="dlinaStoronyParalelograma" name="dlinaStoronyParalelograma" placeholder="Длина стороны">
+              <input type="number" id="dlinaVisotyParalelograma" name="dlinaVisotyParalelograma" placeholder="Длина высоты">
+              <button type="button" onclick="showResultInDomParalelograma()">Результат</button>
+          </form>
+        </td>
+        <td id="ploschadParalelograma"></td>
+      </tr> 
+      <tr>
+        <td>
+          <img src="https://ru.onlinemschool.com/pictures/area/diamond.png" alt="">
+        </td>
+        <td>
+          <h1>Формулы площади ромба</h1>        
+          <div>Площадь ромба равна произведению длины его стороны и длины опущенной на эту сторону высоты.</div>
+          <pre>S = a * h</pre>   
+          <form>
+              <input type="number" id="dlinaStoronyRomba" name="dlinaStoronyRomba" placeholder="Длина стороны">
+              <input type="number" id="dlinaVisotyRomba" name="dlinaVisotyRomba" placeholder="Длина высоты">
+              <button type="button" onclick="showResultInDomRomba()">Результат</button>
+          </form>
+        </td>
+        <td id="ploschadRomba"></td>
+      </tr>
+    </table>
+    <script src="JS/libraryFormula.js"></script>
+   <script src="JS/domOperations.js"></script>
+</body>
+</html>
